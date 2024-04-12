@@ -32,8 +32,9 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
             onChange={(e) => updateFieldHandler("review", e.target.value)}
           />
           <BsFillEmojiNeutralFill />
-          <p>Poderia ser melhor</p>
+          <p>Pode melhorar</p>
         </label>
+       
         <label htmlFor="" className="radio-container">
           <input
             type="radio"

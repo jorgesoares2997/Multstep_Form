@@ -25,7 +25,6 @@ const UserForm = ({ data, updateFieldHandler }) => {
           required
           value={data.email || ""}
           onChange={(e) => updateFieldHandler("email", e.target.value)}
-      
         />
       </div>
     </div>

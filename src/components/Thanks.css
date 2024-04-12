@@ -1,28 +1,34 @@
-.thanks-container{
+.thanks-container {
     text-align: center;
 }
 
-.thanks-container h2{
+.thanks-container h2 {
     margin-bottom: 1rem;
 }
 
-.thanks-container p{
+.thanks-container p {
     font-size: .9rem;
     margin-bottom: 0.5rem;
 }
 
-.thanks-container h3{
+.thanks-container h3 {
     margin: 1rem 0;
 }
 
-.review-data{
+.review-data {
     text-align: left;
+    padding: 10px;
 }
 
-.review-data svg{
+.review-data svg {
     margin-left: 5px;
+    width: 30px;
+    font-size: 50px;
+    fill: #7076f4;
 }
 
-.review-data span{
+
+.review-data span {
     font-weight: bold;
+    display: flex;
 }

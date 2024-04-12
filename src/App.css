@@ -73,14 +73,20 @@ textarea {
     gap: 0.5rem;
     align-items: center;
     border-radius: 3px;
-    background-color: #dfdfdf;
+    background-color: #4b3576;
     cursor: pointer;
     border: none;
     transition: 0.3s;
+}
 
-
+.btn span{
+    color: #fff;
+}
+.btn span:hover {
+    color: #000;
 }
 
 .actions button:hover {
     background-color: #cfcfcf;
 }
+
