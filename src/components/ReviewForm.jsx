@@ -13,10 +13,10 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label htmlFor="" className="radio-container">
           <input
             type="radio"
-            value="unsatisfied"
+            value="Fraco"
             name="review"
             required
-            checked={data.review === "unsatisfied"}
+            checked={data.review === "Fraco"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
           />
           <BsFillEmojiFrownFill />
@@ -25,23 +25,23 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label htmlFor="" className="radio-container">
           <input
             type="radio"
-            value="neutral"
+            value="Neutro"
             name="review"
             required
-            checked={data.review === "neutral"}
+            checked={data.review === "Neutro"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
           />
           <BsFillEmojiNeutralFill />
-          <p>Pode melhorar</p>
+          <p>Neutro</p>
         </label>
        
         <label htmlFor="" className="radio-container">
           <input
             type="radio"
-            value="satisfied"
+            value="Legal"
             name="review"
             required
-            checked={data.review === "satisfied"}
+            checked={data.review === "Legal"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
           />
           <BsFillEmojiSmileFill />
@@ -50,10 +50,10 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label htmlFor="" className="radio-container">
           <input
             type="radio"
-            value="very_satisfied"
+            value="Adorei"
             name="review"
             required
-            checked={data.review === "very_satisfied"}
+            checked={data.review === "Adorei"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
           />
           <BsFillEmojiHeartEyesFill />
