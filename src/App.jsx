@@ -24,15 +24,15 @@ function App() {
     if (data.name === "" || data.email === "" || data.review === "") {
       alert("Por favor, preencha todos os campos.");
       return;
-    }
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "jorgesoares2997@gmail.com",
-      Password: "15672F23AC3676E7023F7F8189CF312DDE82",
-      To: data.email,
-      From: "jorgesoares2997@gmail.com",
-      Subject: `Olá ${data.name}`,
-      Body: `Muito obrigado por sua avaliação ao meu portfólio, te agradeço.<br> 
+    } else
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "jorgesoares2997@gmail.com",
+        Password: "F5A5432A42192A19A994B801EA071F75DE22",
+        To: data.email,
+        From: "jorgesoares2997@gmail.com",
+        Subject: `Olá ${data.name}`,
+        Body: `Muito obrigado por sua avaliação ao meu portfólio, te agradeço.<br> 
       sua avaliação foi: ${data.review}<br>
       e o seu comentario foi: ${data.comment}<br>
       <br>
@@ -43,10 +43,7 @@ function App() {
       <br>
       Jorge Soares
       `,
-    }).then(
-      (message) => alert("Avaliação enviada, obrigado por participar."),
-      location.reload()
-    );
+      }).then((message) => alert("Avaliação enviada com sucesso!"));
   }
 
   const updateFieldHandler = (key, value) => {
